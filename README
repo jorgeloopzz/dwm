@@ -1,3 +1,25 @@
+### Considerations
+In case you get a compiling error such as:
+> X11/.../<>.h: no such file or directory
+
+install  `apt-file` to search in which package **<>.h** header file is included. Just a brief example of what happened to me:
+
+```bash
+sudo apt install apt-file
+apt-file search "Xinerema.h"
+libxinerama-dev: /usr/include/X11/extensions/Xinerama.h
+```
+
+`libxinerama-dev` is your target.
+
+
+Copy the `desktop` file in order to be able to select **dwm** in login menu.
+```bash
+sudo cp dwm.desktop /usr/share/xsessions/
+```
+
+
+
 dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
