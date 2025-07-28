@@ -1,4 +1,7 @@
+dwmblocks/dwmblocks
+dwmblocks/*def*
 patches/
 dwm
+*def*
 *.o
 *.orig
