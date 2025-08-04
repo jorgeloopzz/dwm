@@ -1,4 +1,11 @@
-//Modify this file to change what commands output to your statusbar, and recompile using the make command.
+/*       __                   __    __           __       
+    ____/ /      ______ ___  / /_  / /___  _____/ /_______
+   / __  / | /| / / __ `__ \/ __ \/ / __ \/ ___/ //_/ ___/
+  / /_/ /| |/ |/ / / / / / / /_/ / / /_/ / /__/ ,< (__  ) 
+  \__,_/ |__/|__/_/ /_/ /_/_.___/_/\____/\___/_/|_/____/  
+                                                      
+https://github.com/jorgeloopzz                         */
+
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/						/*Update Interval*/	/*Update Signal*/
 	{"  ",		"uname -i",							0,			0},

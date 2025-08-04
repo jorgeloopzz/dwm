@@ -1,4 +1,10 @@
-/* See LICENSE file for copyright and license details. */
+/*       __                 
+    ____/ /      ______ ___ 
+   / __  / | /| / / __ `__ \
+  / /_/ /| |/ |/ / / / / / /
+  \__,_/ |__/|__/_/ /_/ /_/ 
+
+https://github.com/jorgeloopzz */
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
