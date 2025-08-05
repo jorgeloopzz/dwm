@@ -18,6 +18,8 @@ static const Block blocks[] = {
 	{"󰃰 ",		"date '+%d/%m/%Y - %R'",					60,			0},
 
 	{"",		"battery",							120,			0},
+
+	{"",		"volume && pkill -RTMIN+10 dwmblocks",				0,			10},
 };
 
 //sets delimiter between status commands. NULL character ('\0') means no delimiter.
