@@ -63,6 +63,9 @@ static const Layout layouts[] = {
 /* commands */
 static const char *roficmd[] = { "rofi", "-show", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
+static const char *incvol[] = {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL};
+static const char *decvol[] = {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL};
+static const char *mutevol[] = {"pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -88,6 +91,9 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ 0,				XF86XK_AudioRaiseVolume,spawn,{.v = incvol} },
+	{ 0,				XF86XK_AudioLowerVolume,spawn,{.v = decvol} },	
+	{ 0,				XF86XK_AudioMute	,spawn,{.v = mutevol} },	
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
